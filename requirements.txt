@@ -105,5 +105,3 @@ wasabi==1.1.2
 Werkzeug==2.3.6
 Wrapper==1.1.0b1
 wrapt==1.15.0
-pip install pyqt5
-brew install pyqt5
