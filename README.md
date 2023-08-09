@@ -1,1 +1,1 @@
-# categorisez-automatiquement-des-questions
+# categorisez-des-questions
