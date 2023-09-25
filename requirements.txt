@@ -77,7 +77,6 @@ scipy==1.11.1
 self==2020.12.3
 sets==0.3.2
 six==1.16.0
-sklearn==0.0.post5
 smart-open==6.3.0
 soupsieve==2.4.1
 spacy==3.6.0
