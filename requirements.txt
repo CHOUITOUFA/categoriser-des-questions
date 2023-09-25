@@ -31,8 +31,6 @@ huggingface-hub==0.16.4
 idna==3.4
 importlib-metadata==6.6.0
 itsdangerous==2.1.2
-Jinja2==3.1.2
-joblib==1.2.0
 jsonschema==4.17.3
 kiwisolver==1.4.4
 libclang==16.0.6
