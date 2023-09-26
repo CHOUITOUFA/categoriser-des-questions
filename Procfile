@@ -1,1 +1,1 @@
-web:node app.py
+web:gunicorn gettingstarted.wsgi
