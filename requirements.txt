@@ -26,3 +26,4 @@ flatbuffers==23.5.26
 fonttools==4.41.0
 gast==0.4.0
 google-auth==2.22.0
+gunicorn==21.2.0
