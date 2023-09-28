@@ -7,6 +7,7 @@ import numpy as np
 import pandas as pd
 import joblib
 import re
+import os
 from bs4 import BeautifulSoup
 import nltk
 from nltk.stem import WordNetLemmatizer
@@ -69,16 +70,16 @@ def predict():
  question=sentence_cleaner(data["question"])
  print(question)
 
- y_pred = final_model.predict_proba(np.array(['question']))
+ y_pred = final_model.predict_proba(np.array([question]))
  print('y_pred=', y_pred)
  threshold=0.02
  y_pred = (y_pred > threshold) * 1
  y_pred_inversed = multilabel_binarizer.inverse_transform(y_pred)
  print('tags proposées=', y_pred_inversed)
-
  response = {"tags proposées": y_pred_inversed[0]}
  return jsonify(response)
- 
 if __name__ == '__main__':
- app.run(port=5000, debug=True)
+    app.run(port=int(os.environ.get('PORT', 5000)), debug=True)
+
+ #app.run(port=5000, debug=True)
 
