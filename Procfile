@@ -1,1 +1,1 @@
-web: gunicorn stackoverfloww:app
+web: gunicorn app:app
