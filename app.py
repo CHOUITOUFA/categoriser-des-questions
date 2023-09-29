@@ -47,7 +47,7 @@ def sentence_cleaner(text):
    text = re.sub(r'\w*\d+\w*', ' ', text)
    # Remove extra spaces
    text = re.sub('\s+', ' ', text)
-   text = BeautifulSoup(text, "lxml").text
+   #text = BeautifulSoup(text, "lxml").text
    # Tokenization
    text = text.split()
 
